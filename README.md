@@ -1,1 +1,1 @@
-# HNG-Color-Guess-Game
+# HNG-Color-Game
