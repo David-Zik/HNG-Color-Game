@@ -16,14 +16,14 @@ body {
   font-optical-sizing: auto;
   height: 100vh;
   color: #ffffff;
-  background: linear-gradient(135deg, #f54cf5, #46f7f7);
+  background: linear-gradient(135deg, #f37af3, #7af3f3);
   /* background: linear-gradient(135deg, #ff00ff, #00ffff); */
 }
 
 main {
   width: 95%;
   max-width: 550px;
-  margin-top: 0.7em;
+  margin-top: 0.3em;
 }
 
 h3 {
@@ -95,20 +95,33 @@ i {
   border-radius: 0.8em;
 }
 
-.color-options-container {
+/* .color-options-container {
   width: 100%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /*3 columns */
-  grid-template-rows: repeat(2, 100px); /* 2 rows */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 100px);
   padding-left: 0.8em;
   align-items: center;
+} */
+.color-options-container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
 }
 
 .color-option {
-  width: 8em;
-  height: 6.5em;
+  width: 7em;
+  height: 7em;
   border-radius: 0.8em;
+  cursor: pointer;
+}
+
+.color-option:hover {
+  transform: scale(1.05);
 }
 
 .game-info {
@@ -165,11 +178,10 @@ i {
   body {
     margin: 1em auto 0;
     display: flex;
-    align-items: normal;
   }
 
   main {
-    width: 100%;
+    width: 80%;
     max-width: 680px;
   }
 
@@ -178,13 +190,15 @@ i {
   }
 
   .color-options-container {
-    width: 60%;
-    margin: 0 auto;
-    border: 1px solid red;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    grid-template-rows: repeat(2, 110px); /* 2 rows */
-    padding-left: 0.9em;
+    width: 70%;
+    gap: 2em;
+  }
+
+  .color-option {
+    width: 7.5em;
+    height: 7.5em;
+    border-radius: 0.8em;
+    cursor: pointer;
   }
 
   .game-status {
