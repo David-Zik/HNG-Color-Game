@@ -43,7 +43,7 @@ I implemented the game structures and functionalities using the following steps:
 
 3. **JavaScript for Real-Time Date**: I used almighty JavaScript to implement the game's logic and functionalities.
 
-4. **GitHub Hosting**: With the help of Github pages, I was able to host my webpage live which made it accessible through the URL. [Color Game]().
+4. **GitHub Hosting**: With the help of Github pages, I was able to host my webpage live which made it accessible through the URL. [Color Game](https://david-zik.github.io/HNG-Color-Game/).
 
 ## Screenshot
 

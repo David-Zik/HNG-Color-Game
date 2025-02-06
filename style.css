@@ -12,17 +12,18 @@
 body {
   display: flex;
   justify-content: center;
-  align-items: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-optical-sizing: auto;
   height: 100vh;
   color: #ffffff;
-  background: linear-gradient(135deg, #ff00ff, #00ffff);
+  background: linear-gradient(135deg, #f54cf5, #46f7f7);
+  /* background: linear-gradient(135deg, #ff00ff, #00ffff); */
 }
 
 main {
   width: 95%;
   max-width: 550px;
+  margin-top: 0.7em;
 }
 
 h3 {
@@ -43,7 +44,7 @@ h3 {
 
 .score,
 .score[counter] {
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 .score .counter {
@@ -91,6 +92,7 @@ i {
   text-align: center;
   padding: 0.5em 0;
   margin: 0.8em 0;
+  border-radius: 0.8em;
 }
 
 .color-options-container {
@@ -99,11 +101,13 @@ i {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /*3 columns */
   grid-template-rows: repeat(2, 100px); /* 2 rows */
+  padding-left: 0.8em;
+  align-items: center;
 }
 
 .color-option {
-  width: 8.7em;
-  height: 7em;
+  width: 8em;
+  height: 6.5em;
   border-radius: 0.8em;
 }
 
