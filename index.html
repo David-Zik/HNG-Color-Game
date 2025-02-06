@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-rounded/css/uicons-solid-rounded.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gabriela&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Color Game</title>
+  </head>
+  <body>
+    <main>
+      <h3>Color Game</h3>
+      <p class="game-instructions" data-testid="gameInstructions">
+        Select the correct color that matches the displayed box
+      </p>
+
+      <div class="container--score-reset">
+        <p class="score" data-testid="score">
+          🏆 Score: <span class="counter">0</span>
+        </p>
+        <button class="new-game-btn" data-testid="newGameButton">
+          <i class="fi fi-rr-refresh"></i>
+          New Game
+        </button>
+      </div>
+      <div class="color-box" data-testid="colorBox"></div>
+
+      <p class="game-status status-background hidden" data-testid="gameStatus">
+        Correct! You are a genius 🎉
+      </p>
+      <div class="color-options-container" data-testid="colorOption">
+        <button class="color-option option-one"></button>
+        <button class="color-option option-two"></button>
+        <button class="color-option option-three"></button>
+        <button class="color-option option-four"></button>
+        <button class="color-option option-five"></button>
+        <button class="color-option option-six"></button>
+      </div>
+      <p class="game-info">
+        <i class="fi fi-sr-info"></i> pick a color tile to make your choice
+      </p>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
