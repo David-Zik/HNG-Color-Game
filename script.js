@@ -5,6 +5,8 @@ const newGameBtn = document.querySelector(".new-game-btn");
 const colorBox = document.querySelector(".color-box");
 const gameStatus = document.querySelector(".game-status");
 const colorOptions = document.querySelectorAll(".color-option");
+const correctSound = new Audio("assets/correct-sound.mp3");
+const incorrectSound = new Audio("assets/incorrect-sound.mp3");
 
 const colorArray = [
   "#780000",
@@ -117,6 +119,7 @@ const generateGame = function () {
         scoreCount.textContent++;
         gameStatus.classList.remove("hidden");
         showMessage("Correct! You are a genius 🎉", "green");
+        correctSound.play();
         setTimeout(toggleGameStatus, 1000);
         setTimeout(generateGame, 1000);
       } else {
@@ -125,6 +128,7 @@ const generateGame = function () {
         );
         gameStatus.classList.remove("hidden");
         showMessage("Wrong! 😞 Try again", "red");
+        incorrectSound.play();
         setTimeout(toggleGameStatus, 1000);
       }
     });
